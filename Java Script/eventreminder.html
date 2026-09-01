@@ -23,14 +23,6 @@
         });
 
         let years = today.getFullYear() - year;
-
-        if (
-          today.getMonth() < pastDate.getMonth() ||
-          (today.getMonth() == pastDate.getMonth() && today.getDate() < day)
-        ) {
-          years--;
-        }
-
         let message;
 
         if (years >= 1) {
