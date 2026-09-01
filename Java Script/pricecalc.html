@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>price calculator</title>
+  </head>
+  <body>
+    <script>
+      for (let i = 1; i <= 5; i++) {
+      let code = Number(prompt("Enter product code (1-3):"));
+      let quantity = Number(prompt("Enter quantity:"));
+      
+        let total;
+
+        switch (code) {
+          case 1:
+            total = 30 * quantity;
+            console.log("Apple total: ₹" + total);
+            break;
+
+          case 2:
+            total = 10 * quantity;
+            console.log("Banana total: ₹" + total);
+            break;
+
+          case 3:
+            total = 50 * quantity;
+            console.log("Mango total: ₹" + total);
+            break;
+
+          default:
+            console.log("Invalid product code");
+            continue;
+        }
+
+        if (total > 100) {
+          console.log("High purchase");
+        } else {
+          console.log("Normal purchase");
+        }
+      }
+    </script>
+  </body>
+</html>
