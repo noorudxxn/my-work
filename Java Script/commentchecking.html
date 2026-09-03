@@ -12,6 +12,10 @@
             let cleanedcomment = comment.replace(/(bad|ugly|stupid)/gi, "***")
             let pattern = /[0-9]/g;
             let result = str.match(pattern);
+            let capitalwords = comment.match(/\b[A-Z][a-zA-Z]*\b/g)
+           
+            console.log(result);
+            
         }
     </script>
 </body>

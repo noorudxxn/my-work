@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>feedback</title>
+  </head>
+  <body>
+    <script>
+      let jsonString = '{"feedback":"Thank you for your excellent service!"}';
+      let data = JSON.parse(jsonString);
+      try {
+        const checkFeedback = (feedback) => {
+          if (feedback.toLowerCase().includes("thank")) {
+            return "Positive feedback received";
+          } else {
+            return "Feedback noted";
+          }
+        };
+
+        console.log(checkFeedback(data.feedback));
+      } catch (error) {
+        console.log("Invalid JSON");
+      }
+    </script>
+  </body>
+</html>
