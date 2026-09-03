@@ -8,20 +8,30 @@
 <body>
     <script>
         let mixnumbers = [2,3,5,6,7,8];
-        let evennumbers = ""
-        let oddnumbers = ""
-        for( let i=0; i<mixnumbers.length;i++)
-    {
-        if(mixnumbers[i]%2==0){
-        evennumbers = evennumbers + mixnumbers[i] +" "
-        }
-        if(mixnumbers[i]%2!=0){
-            oddnumbers = oddnumbers + mixnumbers[i] +" "
-        }
+        let sum = 0
+        let avg = 0
+        // let evennumbers = ""
+        // let oddnumbers = ""
+        
+    //     for( let i=0; i<mixnumbers.length;i++)
+    // {
+    //     if(mixnumbers[i]%2==0){
+    //     evennumbers = evennumbers + mixnumbers[i] +" "
+    //     }
+    //     if(mixnumbers[i]%2!=0){
+    //         oddnumbers = oddnumbers + mixnumbers[i] +" "
+    //     }
           
-    }
-      console.log (evennumbers);   
-      console.log(oddnumbers);
+    // }
+    //   console.log (evennumbers);   
+    //   console.log(oddnumbers);
+       for(let i=0;i<mixnumbers.length;i++)
+       {
+        sum = sum + mixnumbers[i]
+       }
+       avg = sum / mixnumbers.length
+       console.log(sum);
+       console.log(avg);
        
     </script>
 </body>
