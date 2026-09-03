@@ -8,6 +8,11 @@
 <body>
     <script>
         let comment ="I think this movie was BAD and 100% Stupid! But the Acting was Amazing and 3 actors were great."
+        function filltercomment (comment){
+            let cleanedcomment = comment.replace(/(bad|ugly|stupid)/gi, "***")
+            let pattern = /[0-9]/g;
+            let result = str.match(pattern);
+        }
     </script>
 </body>
 </html>

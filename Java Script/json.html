@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let jsonText = `{
+    "name": "John",
+    "email": "john@gmail.com",
+    "message": "Hello"
+}`;
+  let user = JSON.parse(jsonText);
+      const receiveMessage = (jsonText) => {
+        try {
+          console.log("Message received from " + user.name);
+        } catch (error) {
+          console.log("Error: Invalid JSON");
+        }
+      };
+
+      receiveMessage(jsonText);
+    </script>
+  </body>
+</html>
