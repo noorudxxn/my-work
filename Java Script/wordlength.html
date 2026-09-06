@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>length checking</title>
+  </head>
+  <body>
+    <script>
+      let str = "I love JavaScript";
+      let words = str.split(" ");
+
+      let longest = words[0];
+
+      for (let i = 1; i < words.length; i++) {
+        if (words[i].length > longest.length) {
+          longest = words[i];
+        }
+      }
+
+      console.log("Longest word:", longest);
+    </script>
+  </body>
+</html>

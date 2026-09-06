@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>check pallindrome</title>
+  </head>
+  <body>
+    <script>
+      let word = "madam";
+      let reverse = "";
+      for (let i = word.length - 1; i >= 0; i--) {
+        reverse = reverse + word[i];
+      }
+      if (word == reverse) {
+        console.log("Palindrome");
+      } else {
+        console.log("Not Palindrome");
+      }
+    </script>
+  </body>
+</html>
