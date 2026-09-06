@@ -7,16 +7,18 @@
 </head>
 <body>
     <script>
-        let comment ="I think this movie was BAD and 100% Stupid! But the Acting was Amazing and 3 actors were great."
-        function filltercomment (comment){
-            let cleanedcomment = comment.replace(/(bad|ugly|stupid)/gi, "***")
-            let pattern = /[0-9]/g;
-            let result = str.match(pattern);
-            let capitalwords = comment.match(/\b[A-Z][a-zA-Z]*\b/g)
-           
-            console.log(result);
-            
-        }
+        let comment = "I think this movie was BAD and 100% Stupid! But the Acting was Amazing and 3 actors were great.";
+       function filterComment(comment) {
+    let cleanedComment = comment.replace(/\b(bad|ugly|stupid)\b/gi, "****");
+    let numbers = comment.match(/\d+/g);
+    let numberCount = numbers ? numbers.length : 0;
+    let capitalWords = comment.match(/\b[A-Z][a-zA-Z]*\b/g);
+    let capitalWordCount = capitalWords ? capitalWords.length : 0;
+    return `Cleaned Comment: ${cleanedComment}
+Number Count: ${numberCount}
+Capitalized Word Count: ${capitalWordCount}`;
+}
+console.log(filterComment(comment));
     </script>
 </body>
 </html>
