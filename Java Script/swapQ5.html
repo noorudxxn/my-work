@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="swa1"></p>
+    <p id="swa2"></p>
+    <p id="after"></p>
+    <p id="swap1"></p>
+    <p id="swap2"></p>
+    <script>
+        let num1 = prompt("enter the first variable");
+        let num2 = prompt("enter the second variable");
+        let temp;
+        document.getElementById("swa1").innerHTML = " the first variable is : " + num1;
+        document.getElementById("swa2").innerHTML = " the second variable is : " + num2;
+        document.getElementById("after").innerHTML = "after swapping";
+        temp = num1;
+        num1 = num2;
+        num2 = temp;
+        document.getElementById("swap1").innerHTML =" the first variable is : " + num1;
+        document.getElementById("swap2").innerHTML = " the second variable is : " + num2;
+
+    </script>
+</body>
+</html>

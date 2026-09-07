@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="number1"></p>
+    <p id="number2"></p>
+    <p id="number3"></p>
+    <script>
+    let num1 = Number(prompt("enter the first number :" ));
+        document.getElementById("number1").innerHTML = "the first number is :" + num1 ;
+        console.log("the first number is :", num1);
+        let num2 = Number(prompt("enter the second number :"));
+        document.getElementById("number2").innerHTML = "the second number is :" + num2 ;
+        console.log("the second number is :", num2);
+        let sum = num1 + num2 ;
+        document.getElementById("number3").innerHTML = "the sum of the two numbers are" + sum ;
+        console.log("the sum of the two numbers are", sum) ;
+        </script>
+</body>
+</html>
