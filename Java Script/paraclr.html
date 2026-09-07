@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Form Example</title>
+  </head>
+
+  <body>
+    <form id="myForm">
+      <input type="text" id="textBox" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="para"></p>
+
+    <script>
+      let form = document.getElementById("myForm");
+      let textBox = document.getElementById("textBox");
+      let para = document.getElementById("para");
+      form.onsubmit = function (event) {
+        event.preventDefault();
+        para.innerText = textBox.value;
+        para.style.color = "blue";
+      };
+      para.onmouseover = function () {
+        para.style.color = "green";
+      };
+      para.onmouseout = function () {
+        para.style.color = "blue";
+      };
+    </script>
+  </body>
+</html>
