@@ -18,9 +18,6 @@
             inpbox.focus();
         };
         document.ondblclick= function(event){
-            if(event.target == inpbox){
-                return;
-            }
             para.innerText = inpbox.value;
             inpbox.style.display = "none";
             para.style.display = "block";
