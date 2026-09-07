@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">I love javascript</p>
+    <input type="text" id="inpbox" style="display: none;">
+    <script>
+        let para = document.getElementById("para");
+        let inpbox = document.getElementById("inpbox");
+        para.ondblclick = function () {
+            inpbox.value = para.innerText;
+            para.style.display = "none";
+            inpbox.style.display = "block";
+            inpbox.focus();
+        };
+        document.ondblclick= function(event){
+            if(event.target == inpbox){
+                return;
+            }
+            para.innerText = inpbox.value;
+            inpbox.style.display = "none";
+            para.style.display = "block";
+        };
+    </script>
+</body>
+</html>
