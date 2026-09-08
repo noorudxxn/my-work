@@ -12,6 +12,7 @@
         let para = document.getElementById("para");
         let inpbox = document.getElementById("inpbox");
         para.ondblclick = function () {
+            event.stopPropagation();
             inpbox.value = para.innerText;
             para.style.display = "none";
             inpbox.style.display = "block";
