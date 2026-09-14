@@ -69,6 +69,11 @@
             "please enter numbers only";
           return;
         }
+        if (num1 == "" || num2 == "") {
+        document.getElementById("result").innerHTML =
+            "Please give an input";
+        return;
+    }
         num1 = Number(num1);
         num2 = Number(num2);
 
